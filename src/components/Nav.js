@@ -1,0 +1,19 @@
+import { faMusic } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import React from 'react'
+
+const Nav = ({ libraryStatus, setLibraryStatus }) => {
+  return (
+    <div>
+      <nav>
+        <h1>Wawes</h1>
+        <button onClick={() => setLibraryStatus(!libraryStatus)}>
+          Library
+          <FontAwesomeIcon icon={faMusic} />
+        </button>
+      </nav>
+    </div>
+  )
+}
+
+export default Nav
