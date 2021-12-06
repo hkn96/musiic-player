@@ -58,10 +58,16 @@
 }
 
 .selected {
-  background: violet;
+  background: rgb(165, 181, 228);
 }
 
 .active-library {
   transform: translateX(0%);
   opacity: 1;
+}
+
+@media screen and (max-width: 768px) {
+  .library {
+    width: 100%;
+  }
 }
